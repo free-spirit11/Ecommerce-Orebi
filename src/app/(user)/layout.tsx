@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import '../../styles/globals.css';
 import { Navbar } from '@/components/Navbar';
+import 'slick-carousel/slick/slick.css';
 
 // const geistSans = localFont({
 //   src: './fonts/GeistVF.woff',

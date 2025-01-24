@@ -3,9 +3,9 @@ import React from 'react';
 
 function HomePage() {
   return (
-    <div>
+    <main className='text-sm overflow-hidden min-h-screen'>
       <Banner />
-    </div>
+    </main>
   );
 }
 
