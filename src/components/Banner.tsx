@@ -110,7 +110,7 @@ const Banner = ({ banners }: any) => {
     <div>
       <Slider {...settings}>
         {banners?.map((item: any, index: number) => (
-          <Link href={'/shop'} key={item.id || index}>
+          <Link href={'/cart'} key={item.id || index} className='relative'>
             <Image
               src={urlFor(item.image).url()}
               alt='banner image'

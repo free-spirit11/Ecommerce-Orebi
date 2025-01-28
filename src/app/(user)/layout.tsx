@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 import '../../styles/globals.css';
 import { Navbar } from '@/components/Navbar';
 import 'slick-carousel/slick/slick.css';
+import PageButton from '@/components/PageButton';
 
 // const geistSans = localFont({
 //   src: './fonts/GeistVF.woff',
@@ -27,9 +28,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body
-      // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className='font-display'>
+        <PageButton />
         <Navbar />
         {children}
       </body>
