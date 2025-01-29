@@ -10,7 +10,7 @@ image,
 _id
 } | order(_createdAt asc)`;
 
-const newArrivalQuery = groq`*[_type == 'product' && position == 'New Arrivals']{
+const newArrivalQuery = groq`*[_type == 'product' && isnew == true]{
  ...
   } | order(_createdAt asc)`;
 
